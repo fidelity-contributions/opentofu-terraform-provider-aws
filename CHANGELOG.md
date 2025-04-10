@@ -1,4 +1,18 @@
 ## 5.95.0 (Unreleased)
+
+ENHANCEMENTS:
+
+* resource/aws_sagemaker_image_version: Add `horovod`, `job_type`, `ml_framework`, `processor`, `programming_lang`, `release_notes`, and `vendor_guidance` arguments ([#42143](https://github.com/hashicorp/terraform-provider-aws/issues/42143))
+* resource/aws_sagemaker_notebook_lifecycle_configuration: Add `tags` argument and `tags_all` attribute ([#42141](https://github.com/hashicorp/terraform-provider-aws/issues/42141))
+* resource/aws_transfer_server: Add `TransferSecurityPolicy-2025-03` as a valid value for `security_policy_name`
+resource/aws_transfer_server: Add `TransferSecurityPolicy-FIPS-2025-03` as a valid value for `security_policy_name`
+resource/aws_transfer_server: Add `TransferSecurityPolicy-SshAuditCompliant-2025-02` as a valid value for `security_policy_name` ([#42164](https://github.com/hashicorp/terraform-provider-aws/issues/42164))
+
+BUG FIXES:
+
+* resource/aws_sagemaker_domain: Allow `default_user_settings.custom_file_system_config` and `default_space_settings.custom_file_system_config` to be removed on Update ([#42144](https://github.com/hashicorp/terraform-provider-aws/issues/42144))
+* resource/aws_sagemaker_user_profile: Allow `user_settings.custom_file_system_config` to be removed on Update ([#42144](https://github.com/hashicorp/terraform-provider-aws/issues/42144))
+
 ## 5.94.1 (April  4, 2025)
 
 BUG FIXES:
