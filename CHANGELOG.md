@@ -1,8 +1,14 @@
 ## 5.95.0 (Unreleased)
 
+FEATURES:
+
+* **New Resource:** `aws_redshift_integration` ([#42105](https://github.com/hashicorp/terraform-provider-aws/issues/42105))
+
 ENHANCEMENTS:
 
+* data-source/aws_ec2_network_insights_path: Support `filter_at_destination` and `filter_at_source` attributes ([#42214](https://github.com/hashicorp/terraform-provider-aws/issues/42214))
 * resource/aws_amplify_app: Add `compute_role_arn` argument ([#41650](https://github.com/hashicorp/terraform-provider-aws/issues/41650))
+* resource/aws_ec2_network_insights_path: Add `filter_at_destination` and `filter_at_source` configuration blocks ([#42214](https://github.com/hashicorp/terraform-provider-aws/issues/42214))
 * resource/aws_eks_cluster: Add `force_update_version` argument ([#42134](https://github.com/hashicorp/terraform-provider-aws/issues/42134))
 * resource/aws_prometheus_scraper: Allow `alias`, `destination`, `role_configuration`, and `scrape_configuration` to be updated in-place ([#42109](https://github.com/hashicorp/terraform-provider-aws/issues/42109))
 * resource/aws_sagemaker_image_version: Add `horovod`, `job_type`, `ml_framework`, `processor`, `programming_lang`, `release_notes`, and `vendor_guidance` arguments ([#42143](https://github.com/hashicorp/terraform-provider-aws/issues/42143))
@@ -11,6 +17,7 @@ ENHANCEMENTS:
 
 BUG FIXES:
 
+* resource/aws_elasticache_serverless_cache: Fix to allow in-place updates when `engine` is changed from `redis` to `valkey` ([#42208](https://github.com/hashicorp/terraform-provider-aws/issues/42208))
 * resource/aws_sagemaker_domain: Allow `default_user_settings.custom_file_system_config` and `default_space_settings.custom_file_system_config` to be removed on Update ([#42144](https://github.com/hashicorp/terraform-provider-aws/issues/42144))
 * resource/aws_sagemaker_user_profile: Allow `user_settings.custom_file_system_config` to be removed on Update ([#42144](https://github.com/hashicorp/terraform-provider-aws/issues/42144))
 
