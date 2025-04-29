@@ -570,6 +570,11 @@ make gh-workflow-lint
 
 **NOTE:** Install [tools](#before-running-tests) before running this check.
 
+Permissions in GitHub Actions Workflows
+When configuring GitHub Actions workflows, it is important to explicitly define the permissions block to adhere to the principle of least privilege. For example, the following configuration ensures that the workflow has minimal permissions.
+
+This configuration restricts the workflow to only reading repository contents. If additional permissions are required , they should be explicitly added to the permissions block.
+
 ### YAML Linting / yamllint
 
 YAMLlint checks the validity of YAML files.

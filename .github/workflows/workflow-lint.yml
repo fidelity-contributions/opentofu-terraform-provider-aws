@@ -8,6 +8,9 @@ on:
     paths:
       - .github/workflows/*
       - .ci/tools/go.mod
+permissions:
+  contents: read
+  pull-requests: write
 
 ## NOTE: !!!
 ## When changing these workflows, ensure that the following is updated:
