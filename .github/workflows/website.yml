@@ -2,6 +2,9 @@
 ## when the provider documentation layout is moved to
 ## the Terraform Registry layout.
 name: Website Checks
+permissions:
+  contents: read
+
 on:
   push:
     branches:
