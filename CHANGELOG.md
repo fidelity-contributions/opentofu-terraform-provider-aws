@@ -1,4 +1,9 @@
 ## 6.5.0 (Unreleased)
+
+FEATURES:
+
+* **New Resource:** `aws_s3_bucket_metadata_configuration` ([#41364](https://github.com/hashicorp/terraform-provider-aws/issues/41364))
+
 ## 6.4.0 (July 17, 2025)
 
 FEATURES:
@@ -60,6 +65,11 @@ BUG FIXES:
 * resource/aws_ssoadmin_application: Updates value of `arn` when refreshing state. ([#43273](https://github.com/hashicorp/terraform-provider-aws/issues/43273))
 
 ## 6.2.0 (July  2, 2025)
+
+NOTES:
+
+* resource/aws_s3_bucket_object: The format of the `id` attribute has changed from `key` to `bucket`**/**`key`. All configurations using `id` should be updated to use the `key` attribute instead ([#43119](https://github.com/hashicorp/terraform-provider-aws/issues/43119))
+* resource/aws_s3_object: The format of the `id` attribute has changed from `key` to `bucket`**/**`key`. All configurations using `id` should be updated to use the `key` attribute instead ([#43119](https://github.com/hashicorp/terraform-provider-aws/issues/43119))
 
 ENHANCEMENTS:
 
